@@ -2,19 +2,16 @@ import java.util.Scanner
 import javax.annotation.processing.Messager
 
 fun main(){
-
-    val messager = "new settings"
-    showMessage(messager)
-    sum (10,15)
-    val user = People("Artur",32)
-    user.speak("Привет")
-    println(user)
-
+    val scanner = Scanner(System.`in`)
+val totalBalance = money(5000.0)
+   while (true){
+    showText()
+when(scanner.nextInt()){
+    1-> totalBalance.addMoney(scanner.nextDouble())
+    2-> totalBalance.reducTheBalance(scanner.nextDouble())
 }
 
 
+}}
 
-fun showMessage(messager: String){
-    println(messager)
 
-}

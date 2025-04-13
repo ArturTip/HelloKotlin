@@ -1,5 +1,6 @@
-fun sum(x : Int, y : Int){
-    val sum = x +  y
-    println(sum)
+fun showText(){
+    println("ВЫберите операцию:\n" +
+            "1. Добавить доход\n" +
+            "2. Добавить расход")
 
 }
