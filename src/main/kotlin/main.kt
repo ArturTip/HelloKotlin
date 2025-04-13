@@ -1,12 +1,20 @@
 import java.util.Scanner
+import javax.annotation.processing.Messager
 
 fun main(){
-    println("Hello Kotlin")
-    val scanner = Scanner(System.`in`)
-    println("enter number: ")
-    val number = scanner.nextInt()
-    val sum = 100 + number
-    println(sum)
+
+    val messager = "new settings"
+    showMessage(messager)
+    sum (10,15)
+    val user = People("Artur",32)
+    user.speak("Привет")
+    println(user)
 
 }
 
+
+
+fun showMessage(messager: String){
+    println(messager)
+
+}
